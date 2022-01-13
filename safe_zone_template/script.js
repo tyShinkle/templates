@@ -12,7 +12,7 @@ function setupSafe(){
     {
         safeContainer.style.width = screen.height - (safeAreaLeft*2) + 'px';
     }else{
-        saveContainer.style.width = '100%';
+        safeContainer.style.width = '100%';
     }
 }
 
