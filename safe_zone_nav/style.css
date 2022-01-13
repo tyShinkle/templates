@@ -1,0 +1,31 @@
+:root{
+    --sat: env(safe-area-inset-top);
+    --sar: env(safe-area-inset-right);
+    --sab: env(safe-area-inset-bottom);
+    --sal: env(safe-area-inset-left);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+}
+
+#safeContainer{
+    width:100%;
+    margin:auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width:98%;
+    margin:auto;
+    padding:10px;
+    font-family:sans-serif;
+    border-bottom:5px solid black;
+}
