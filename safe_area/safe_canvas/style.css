@@ -75,7 +75,8 @@ nav>h2:hover{
 
 canvas{
     position:absolute;
-    width:98%;
-    left:1%;
-    border:2px solid red;
+    height:calc(100vh - 58px);
+    left:50%;
+    transform:translate3d(-50%,0,0);
+    border: 5px solid blue;
 }

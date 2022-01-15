@@ -5,7 +5,7 @@ let menu = document.getElementById('menu');
 let menuBtn = document.getElementById('menuBtn');
 let menuActive = false;
 let canvas = document.getElementById('canvas');
-let safeArea;
+let safeArea, canvasHeight, canvasWidth;
 
 //LOAD
 window.addEventListener('load',setupSafe);
@@ -20,13 +20,8 @@ function setupSafe(){
     }else{
         safeContainer.style.width = '100%';
     }
-    console.log('window:'+window.innerHeight);
-    console.log('navHeight:'+nav.offsetHeight);
     canvas.width = nav.offsetWidth;
-    canvas.style.width = nav.offsetWidth;
-    canvas.height = window.innerHeight-nav.offsetHeight;
-    canvas.style.height = window.innerHeight-nav.offsetHeight;
-    console.log(canvas.height);
+    canvas.style.width = nav.offsetWidth + 'px';
 }
 
 function slideMenu(){
