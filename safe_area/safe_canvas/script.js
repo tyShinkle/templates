@@ -22,11 +22,10 @@ function setupSafe(){
     }
     console.log('window:'+window.innerHeight);
     console.log('navHeight:'+nav.offsetHeight);
-    canvasHeight = window.innerHeight - nav.offsetHeight;
     canvas.width = nav.offsetWidth;
     canvas.style.width = nav.offsetWidth;
-    canvas.height = canvasHeight-5;
-    canvas.style.height = canvasHeight-5;
+    canvas.height = window.innerHeight-nav.offsetHeight;
+    canvas.style.height = window.innerHeight-nav.offsetHeight;
     console.log(canvas.height);
 }
 
