@@ -8,7 +8,7 @@ let canvas = document.getElementById('canvas');
 let safeArea, canvasHeight, canvasWidth;
 
 //LOAD
-window.addEventListener('load',setupSafe);
+window.onload = setupSafe;
 window.onresize = setupSafe;
 
 function setupSafe(){
